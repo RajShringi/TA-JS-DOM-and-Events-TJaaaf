@@ -173,9 +173,13 @@ h1 {
 
 .output {
   background-color: #333;
-  height: 100px;
+  height: 80px;
   border-radius: 20px;
   margin-bottom: 2rem;
+  color: #fff;
+  text-align: right;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .btn {
