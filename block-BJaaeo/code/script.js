@@ -13,7 +13,7 @@ numbers.addEventListener("click", (e) => {
 });
 
 operation.addEventListener("click", (e) => {
-  output.innerText += `${e.target.dataset.op}`;
+  output.innerText += `${e.target.dataset.op} `;
 });
 
 let equal = document.querySelector(".btn-equal");
