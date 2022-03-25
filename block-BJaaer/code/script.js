@@ -22,7 +22,7 @@ function handleSubmit(e) {
     <p>Color: ${userInfo.color}</p>
     <p>Book Genre: ${userInfo.genre}</p>
     <a>${
-      userInfo.term === "checked"
+      userInfo.term
         ? "👉 You agree terms and conditions"
         : "👉 You do not agree terms and conditions"
     }</a>
