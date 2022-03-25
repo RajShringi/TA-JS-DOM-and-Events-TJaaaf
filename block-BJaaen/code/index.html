@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper and Scissors</title>
+    <link
+      rel="stylesheet"
+      href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="heading">Rock Paper Scissors</h1>
+        <div class="player">
+          <h3>You - 0</h3>
+          <div class="icons flex">
+            <i class="rock fa fa-hand-rock-o" aria-hidden="true"></i>
+            <i class="paper fa fa-hand-paper-o" aria-hidden="true"></i>
+            <i class="scissors fa fa-hand-scissors-o" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="computer">
+          <h3>Computer - 0</h3>
+          <div class="icons flex">
+            <i class="rock fa fa-hand-rock-o" aria-hidden="true"></i>
+            <i class="paper fa fa-hand-paper-o" aria-hidden="true"></i>
+            <i class="scissors fa fa-hand-scissors-o" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="restart-container">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+
+        <div class="show-winner"></div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
