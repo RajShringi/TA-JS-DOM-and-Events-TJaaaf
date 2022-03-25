@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🤯 Calculator 🤩</h1>
+    <div class="container">
+      <div class="calc">
+        <div class="output"></div>
+        <div class="operation-container flex">
+          <button class="btn btn-op" data-op="+">+</button>
+          <button class="btn btn-op" data-op="-">-</button>
+          <button class="btn btn-op" data-op="*">*</button>
+          <button class="btn btn-op" data-op="/">/</button>
+        </div>
+        <div class="buttons-container flex">
+          <div class="numbers-container flex">
+            <button class="btn" data-num="7">7</button>
+            <button class="btn" data-num="8">8</button>
+            <button class="btn" data-num="9">9</button>
+            <button class="btn" data-num="4">4</button>
+            <button class="btn" data-num="5">5</button>
+            <button class="btn" data-num="6">6</button>
+            <button class="btn" data-num="1">1</button>
+            <button class="btn" data-num="2">2</button>
+            <button class="btn" data-num="3">3</button>
+            <button class="btn" data-num=".">.</button>
+            <button class="btn" data-num="0">0</button>
+            <button class="btn btn-clear">c</button>
+          </div>
+          <button class="btn btn-equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
