@@ -14,12 +14,6 @@ let allPeople = got.houses.reduce((acc, cur) => {
   return acc;
 }, []);
 
-allPeople.map((person) => {
-  return `
-    <li></li>
-    `;
-});
-
 function createUI(arr) {
   return arr
     .map((element) => {
@@ -41,6 +35,18 @@ peopleList.innerHTML = createUI(allPeople);
 function handleClick(e) {
   let searchHouse = e.target.innerText;
   let arr = [];
+
+  housesList.innerHTML = got.houses
+    .map((house) => {
+      if (house.name === searchHouse) {
+        return `<li class='btn btn-house active'>${house.name}<li>`;
+      }
+      return `
+    <li class='btn btn-house'>${house.name}<li>
+    `;
+    })
+    .join("");
+
   arr = got.houses.filter((house) => {
     if (house.name === searchHouse) {
       return house;
