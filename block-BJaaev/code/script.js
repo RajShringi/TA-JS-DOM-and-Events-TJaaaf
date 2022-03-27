@@ -83,7 +83,7 @@ createUI(allTodos, root);
 
 let btnClear = document.querySelector(".btn-clear");
 btnClear.addEventListener("click", () => {
-  localStorage.clear();
-  allTodos = [];
+  allTodos = allTodos.filter((todo) => !todo.isDone);
+  localStorage.setItem("todos", JSON.stringify(allTodos));
   createUI(allTodos, root);
 });
