@@ -1,8 +1,6 @@
 let inputbox = document.querySelector('input[type="text"]');
 let root = document.querySelector(".todo-list");
 let allTodos = JSON.parse(localStorage.getItem("todos")) || [];
-let completed = allTodos.filter((todo) => todo.isDone);
-let active = allTodos.filter((todo) => todo.isDone === false);
 
 function handleDelete(e) {
   let index = e.target.dataset.id;
@@ -58,10 +56,12 @@ function handleSubmit(e) {
 }
 
 function handleActive() {
+  let active = allTodos.filter((todo) => todo.isDone === false);
   createUI(active, root);
 }
 
 function handleCompleted() {
+  let completed = allTodos.filter((todo) => todo.isDone);
   createUI(completed, root);
 }
 
@@ -80,3 +80,10 @@ btnAll.addEventListener("click", handleAll);
 
 inputbox.addEventListener("keyup", handleSubmit);
 createUI(allTodos, root);
+
+let btnClear = document.querySelector(".btn-clear");
+btnClear.addEventListener("click", () => {
+  localStorage.clear();
+  allTodos = [];
+  createUI(allTodos, root);
+});
