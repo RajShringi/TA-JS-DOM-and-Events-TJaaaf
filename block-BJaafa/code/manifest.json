@@ -1,0 +1,9 @@
+{
+  "name": "quote-generator",
+  "description": "generate a random quote every time you click new quote or open new tab",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
