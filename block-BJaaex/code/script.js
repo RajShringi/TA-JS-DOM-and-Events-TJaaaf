@@ -51,7 +51,7 @@ gameGrid.forEach((item) => {
   const back = document.createElement("div");
   back.classList.add("back");
 
-  card.style.backgroundImage = `url(${item.img})`;
+  back.style.backgroundImage = `url(${item.img})`;
   grid.appendChild(card);
   card.appendChild(front);
   card.appendChild(back);
