@@ -78,12 +78,12 @@ btnCompleted.addEventListener("click", handleCompleted);
 let btnAll = document.querySelector(".btn-all");
 btnAll.addEventListener("click", handleAll);
 
-inputbox.addEventListener("keyup", handleSubmit);
-createUI(allTodos, root);
-
 let btnClear = document.querySelector(".btn-clear");
 btnClear.addEventListener("click", () => {
   allTodos = allTodos.filter((todo) => !todo.isDone);
   localStorage.setItem("todos", JSON.stringify(allTodos));
   createUI(allTodos, root);
 });
+
+inputbox.addEventListener("keyup", handleSubmit);
+createUI(allTodos, root);
